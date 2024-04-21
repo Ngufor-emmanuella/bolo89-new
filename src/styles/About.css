@@ -1,6 +1,5 @@
-.home {
+.home-about {
   background-color: #f0e2e2;
-  display: flex;
   margin-top: 3%;
   height: 100vh;
   width: 100%;
@@ -44,7 +43,7 @@ h3 {
 }
 
 .stand-for {
-  margin-top: 18%;
+  margin-top: 10%;
 }
 
 .vision {
@@ -56,12 +55,13 @@ h3 {
 .why-us {
   background-color: #fff;
   height: 100vh;
+  width: 100%;
 }
 
 .section-title {
   padding-bottom: 40px;
- 
-  margin-left: 4rem;
+  padding-top: 5rem;
+  margin-left: 5rem;
   margin-right: 4rem;
 }
 
@@ -76,8 +76,6 @@ h3 {
 
 .section-title h2::after {
   content: "";
-  width: 120px;
-  height: 1px;
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
   margin: 4px 10px;
@@ -120,7 +118,7 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   padding: 0;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   color: #625b4be1;
 }
 
@@ -139,7 +137,7 @@ h3 {
 
 .first-row {
   background-color: #fff;
-  border: 5px solid red;
+  border: 3px solid #efefef;
   box-shadow: #aaaaaa;
   margin-right: 1rem;
   height: 65vh;

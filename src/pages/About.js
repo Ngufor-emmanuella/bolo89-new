@@ -6,7 +6,7 @@ import '../styles/About.css';
 const About = () => {
   return (
     <Layout>
-      <div className="home" style={{ backgroundColor: `#f0e2e2` }}>
+      <div className="homeabout" style={{ backgroundColor: `#f0e2e2` }}>
 
         <div className="side"> 
 
