@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from './../components/Layout';
 import Growimage from '../images/office1.jpg';
 import '../styles/About.css';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const About = () => {
   return (
@@ -62,10 +63,10 @@ const About = () => {
                 advocate for your business success.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Complimentary Coffee, Tea and Water</li>
-                <li><i class="bi bi-check-circle"></i> Boutique, hotel lobby-like lounge area.</li>
-                <li><i class="bi bi-check-circle"></i> Fully furnished reception areas.</li>
-                <li><i class="bi bi-check-circle"></i>  Complimentary High Speed Internet</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem'}} /> Complimentary Coffee, Tea and Water</li>
+                <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem'}} /> Boutique, hotel lobby-like lounge area.</li>
+                <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> Fully furnished reception areas.</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }}  /> Complimentary High Speed Internet</li>
               </ul>
             </div>
           </div>
@@ -79,9 +80,9 @@ const About = () => {
                 your work day or critical meetings.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Backup Generator.</li>
-                <li><i class="bi bi-check-circle"></i> 24/7 Member Access.</li>
-                <li><i class="bi bi-check-circle"></i> Security Guard on Duty 24/7 and water reservoir.</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> Backup Generator.</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> 24/7 Member Access.</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> Security Guard on Duty 24/7 and water reservoir.</li>
             </ul>
             </div>
             </div>
@@ -95,9 +96,9 @@ const About = () => {
                   of all we do. It’s the little things that make all the difference!
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle"></i> Free Access to Events.</li>
-                  <li><i class="bi bi-check-circle"></i> Conference Room Hours Included.</li>
-                  <li><i class="bi bi-check-circle"></i> Discounted Space Rentals.</li>
+                  <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> Free Access to Events.</li>
+                  <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem',  position: 'relative', top: '0.5rem' }} /> Conference Room Hours Included.</li>
+                  <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem',  position: 'relative', top: '0.5rem' }} /> Discounted Space Rentals.</li>
                 </ul>
             </div>
           </div>

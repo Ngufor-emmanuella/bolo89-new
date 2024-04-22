@@ -13,3 +13,11 @@
   text-decoration: none;
   color: #fff;
 }
+
+.navigation-menu li a:hover {
+  color:  #cda45e;
+}
+
+.MuiSvgIcon-root {
+  color: #fff;
+}

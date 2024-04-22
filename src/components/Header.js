@@ -3,6 +3,7 @@ import { Box, AppBar, Typography,Toolbar, IconButton, Drawer } from '@mui/materi
 import { Link }from 'react-router-dom';
 import './../styles/Header.css';
 import MenuIcon from '@mui/icons-material/Menu';
+import Log from '../images/bolo-white.png';
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -15,7 +16,9 @@ const Header = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
                 <Typography color={"white"} varient="h5" component="div" sx={{ flexGrow: 1}}>
-            Bolo89 website new
+                <Link to={"/"}>
+                  <img src={Log} alt="logo" height={"40"} />
+                </Link>
             </Typography>
 
             {/* <Box sx={ {display: { xs: "none", sm: "block" }} } > */}
@@ -60,17 +63,22 @@ const Header = () => {
   return (
     <div>
       <Box>
-        <AppBar component={"nav"} sx={{ bgcolor: "black"}}>
+        <AppBar component={"nav"} sx={{ bgcolor: "rgba(12, 11, 9, 0.6);", borderBottom: "rgba(12, 11, 9, 0.6);", width: '100%'}}>
           <Toolbar>
-            <IconButton color="#fff" aria-label="open drawer" edge="start" sx={{
-              mr:5, display: { sm: "none"},
-            }}>
-              <MenuIcon />
 
-            </IconButton>
           <Typography color={"white"} varient="h5" component="div" sx={{ flexGrow: 1}}>
-            Bolo89 website new
-            </Typography>
+            <Link to={"/"}>
+             <img src={Log} alt="logo" height={"40"} />
+           </Link>
+          </Typography>
+            
+            <IconButton InputLabelProps={{ className: "menu-icon"}} aria-label="open drawer" edge="start" sx={{
+              ml:2, display: { sm: "none"},
+            }}
+            onClick={handleDrawerToggle}
+            >
+              <MenuIcon />
+            </IconButton>
 
             <Box sx={ {display: { xs: "none", sm: "block" }} } >
               <ul className="navigation-menu">
