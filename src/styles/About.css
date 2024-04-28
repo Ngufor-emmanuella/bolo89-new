@@ -152,6 +152,14 @@ h3 {
   color: #fff;
 }
 
+.backarrow {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
 /* mobile design */
 
 @media only screen and (max-width: 767px) {
@@ -171,6 +179,41 @@ h3 {
     color: #cda45e;
     font-size: 25px;
   }
+
+  .grow-image img {
+    width: 86vw;
+}
+
+.section-title {
+  padding-bottom: 40px;
+  padding-top: 5rem;
+  width: 100%;
+  margin-left: 0;
+}
+
+.section-title p {
+  font-size: 30px;
+  margin-left: 1.5rem;
+}
+
+.section-title h2 {
+  margin-left: 1.5rem;
+}
+
+.row {
+  display: block;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+.first-row {
+  margin-bottom: 2rem;
+}
+
+.box {
+  padding-left: 4%;
+  padding-right: 5%;
+}
 
 
 }

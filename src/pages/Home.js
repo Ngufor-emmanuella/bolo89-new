@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Layout>
       
-      <div className="home" style={{ backgroundImage: `url(${Bolo})` }}>
+      <div className="home" style={{ backgroundImage: `url(${Bolo})` }} >
         <div className="headerContainer">
           <h1>A workspace for all types of <span>business </span> </h1>
           <h2>Our coworking spaces let you choose to work with others in an open-plan area, a shared office or private office.</h2>

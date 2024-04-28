@@ -1,8 +1,11 @@
 import React from 'react'
 import Layout from './../components/Layout';
 import Growimage from '../images/office1.jpg';
+import { Link } from "react-router-dom";
 import '../styles/About.css';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 const About = () => {
   return (
@@ -108,6 +111,12 @@ const About = () => {
 
         </div>
 
+       
+          <div className="backarrow">
+            <Link to="/"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+            <Link to="/services"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+          </div>
+    
       </div>
     </Layout>
   )
