@@ -24,6 +24,15 @@
 
 }
 
+h3 {
+  color: #cda45e;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 2rem;
+  margin-left: 2rem;
+
+}
+
 h4 {
   color: #cda45e;
   font-size: 18px;
@@ -64,4 +73,13 @@ p {
 h4:hover {
   background-color: #cda45e;
   color: #fff;
+}
+
+.arrow {
+  background-color: none;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }

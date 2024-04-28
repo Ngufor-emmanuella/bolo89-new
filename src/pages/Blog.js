@@ -5,13 +5,15 @@ import '../styles/Blog.css';
 import office1b from '../images/office1b.jpg';
 import img11 from '../images/img11.jpg';
 import img4 from '../images/img4.jpg';
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 
 const Blog = () => {
   return (
     <Layout>
        <div className="blog-page">
-        <h4> BLOG </h4>
+        <h3> BLOG </h3>
         <p> Checkout our Blog post ...</p>
 
         <div className="blog-row">
@@ -43,6 +45,11 @@ const Blog = () => {
               </div>
             </div>
 
+            </div>
+
+            <div className="arrow">
+             <Link to="/services"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+             <Link to="/events"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
             </div>
 
         </div>
