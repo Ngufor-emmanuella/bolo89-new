@@ -135,10 +135,6 @@ h3 {
   padding: 0;
 }
 
-.box ul li {
-  
-}
-
 .first-row {
   background-color: #fff;
   border: 3px solid #efefef;
@@ -154,4 +150,27 @@ h3 {
 
 .box:hover {
   color: #fff;
+}
+
+/* mobile design */
+
+@media only screen and (max-width: 767px) {
+  .homeabout {
+    width: 100%;
+  }
+
+  .side {
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+
+  h3 {
+    width: 100%;
+    color: #cda45e;
+    font-size: 25px;
+  }
+
+
 }

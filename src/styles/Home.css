@@ -1,5 +1,5 @@
 .home {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -28,7 +28,7 @@
   z-index: 5;
 }
 
-.home .headerContainer h1 {
+.headerContainer h1 {
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -40,12 +40,12 @@
   margin-left: 5%;
 }
 
-.home .headerContainer span {
+.headerContainer span {
   color: #cda45e;
 }
 
 
-.home .headerContainer h2 {
+.headerContainer h2 {
   margin-bottom: 10px 0 0 0;
   font-size: 22px;
   font-weight: lighter;
@@ -57,7 +57,6 @@
 .headerContainer button {
   background: none;
   margin-top: 20px;
-  /* margin-rem; */
   border: 2px solid #cda45e;
   border-radius: 20px;
   cursor: pointer;
@@ -70,10 +69,6 @@
   margin-left: 5%;
 }
 
-.headerContainer button:hover {
-  color:  #cda45e;
-}
-
 .secButton {
   color: red;
  margin-right: 5rem;
@@ -84,18 +79,21 @@
 }
 
 .headerContainer button:hover {
-  background-color: #07090a;
+  /* background-color: #07090a; */
+  background-color: #fff;
+  color:  #cda45e;
   cursor: pointer;
   transition: 0.3s ease-in;
 }
 
 /* mobile view  */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .home {
     justify-content: center;
     align-items: center;
   }
+
   .headerContainer {
     margin-left: 0;
     border-radius: 10px;
@@ -104,22 +102,52 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #121619;
-    color: white;
   }
-  .home .headerContainer h1 {
-    font-size: 40px;
-    height: 30px;
-    margin: 30px 0px;
-    color: white;
+
+  .headerContainer h1 {
+    font-size: 35px;
+    width: 100%;
+    margin-left: 10%;
+    color: #fff;
   }
+
+  .headerContainer h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #eee;
+    width: 90%;
+    padding-top: 8%;
+  }
+
   .home .headerContainer p {
     font-size: 30px;
     color: white;
   }
+
   .headerContainer button {
     background-color: white;
     color: #121619;
     margin-bottom: 30px;
   }
+
+  .get-started {
+    display: flex;
+    padding-top: 5%;
+    margin-right: 10%;
+    width: 100%;
+  }
+
+  .headerContainer button {
+    background: none;
+    color: #fff;
+  }
+
+  .headerContainer button:hover {
+    background-color: #fff;
+    color:  #cda45e;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+  }
+
+  
 }

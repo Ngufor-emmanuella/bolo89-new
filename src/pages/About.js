@@ -7,7 +7,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 const About = () => {
   return (
     <Layout>
-      <div className="homeabout" style={{ backgroundColor: `#f0e2e2` }}>
+      <div className="homeabout" style={{ backgroundColor: `#f0e2e2`, position: "relative", top: "-2rem" }}>
 
         <div className="side"> 
 

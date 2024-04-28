@@ -13,7 +13,7 @@ const Home = () => {
           <h1>A workspace for all types of <span>business </span> </h1>
           <h2>Our coworking spaces let you choose to work with others in an open-plan area, a shared office or private office.</h2>
           
-          <div>
+          <div className="get-started">
             <Link to="/about">
               <button>GET STARTED</button>
             </Link>
