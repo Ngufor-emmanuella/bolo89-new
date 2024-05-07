@@ -1,18 +1,21 @@
 import React from 'react';
 import Layout from '../components/Layout';
-// import Growimage from '../images/office1.jpg';
 import { Link } from "react-router-dom";
 import '../styles/Services.css';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
-import office from '../images/office1b.jpg';
-import office2 from '../images/office1b.jpg';
-import office3 from '../images/office1b.jpg';
-import office4 from '../images/office1b.jpg';
-import office5 from '../images/office1b.jpg';
-import office6 from '../images/office1b.jpg';
-import office7 from '../images/office1b.jpg';
-
+import { Grid, Card, CardContent, Typography, CardActions, Button } from '@mui/material';
+import Container from '@mui/material/Container';
+import { CardActionArea } from '@mui/material';
+import CardMedia from '@mui/material/CardMedia';
+import office1b from '../images/office1b.jpg';
+import office2 from '../images/office2.jpg';
+import office3 from '../images/office3.jpg';
+import office4 from '../images/office4.jpg';
+import office5 from '../images/office5.jpg';
+import office6 from '../images/office6.jpg';
+import office7 from '../images/office7.jpg';
+import office1 from '../images/office1.jpg';
 
 const Services = () => {
   return (
@@ -33,194 +36,415 @@ const Services = () => {
               <li>Large Mix-Use Space</li>
               <li>Open Desk</li>
             </ul>
-       <br></br>
-       <br></br>
 
-      <div className="columns">
+       <Container maxWidth="lg">
+        
+        <Grid container spacing={5} style={{marginTop: "20px"}}>
+         
+            <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office1b} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Open Desk Half Day Pass</h3>
+                    </Typography>
 
-        <div className="service-row">
-          <img src={office} alt="open area" />
-          <h2>Open Desk Half Day Pass</h2>
-          <p> 7,500 XAF /Half Day Pass (no monthly fee)</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>
-        </div>
-        
-        <div className="service-row">
-        <img src={office} alt="open area" />
-        <h2>Open Desk Full Day Pass</h2>
-          <p>  10,000 XAF /Full Day Pass (no monthly fee)</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>
-        
-        </div>
+                    <Typography variant="body2" color="text.secondary">
+                      <p>7500 XAF / Half Day Pass (No monthly fee)</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office1b} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Open Desk Full Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>10,000 XAF /Full Day Pass (no monthly fee)</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30vh", height:"71vh"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office1b} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Open Desk Monthly</h3>
+                      
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary" >
+                      <p>100,000 XAF/month. This plan renews automatically</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office2} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Semi-Private Desk Half Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>10,000 XAF /Half Day Pass (no monthly fee)</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office2 } alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Semi-Private Desk Full Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>15,000 XAF /Full Day Pass (no monthly fee)</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px", height:"72vh"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office2 } alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Semi-Private Desk Monthly</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>125,000 XAF /month. This plan renews automatically.</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office3} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Shared Private Office - Half Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>15,000 XAF /Half Day Pass (no monthly fee)</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office3} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Shared Private Office - Full Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>20,000 XAF /Full Day pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office3} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}> Shared Private Office - Monthly</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>150,000 XAF /month. This plan renews automatically.</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px", height:"72vh"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office4} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Private Office Half Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>20,000 XAF /Full Day Pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px", height:"72vh"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office4} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Private Office Full Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>30,000 XAF /Full Day Pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px", height:"72vh"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office5} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Private Office Monthly</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>250,000 XAF /month. This plan renews automatically.</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office4} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Large Mix-Use Space Half Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>100,000 XAF /Half Day Pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office1} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Large Mix-Use Space Full Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>200,000 XAF /Full Day Pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office1} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Executive Conference Room (Dallas) Half Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>75,000 XAF /Half Day Pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office6} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Executive Conference Room (Dallas) Full Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>100,000 XAF /Full Day Pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office7} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Private Meeting Space Full Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>75,000 XAF /Full Day Pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
+
+              <Grid item xs={12} sm={6} ms={6} >
+              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+                <CardActionArea>
+                  <CardMedia component="img" height="350" image={office7} alt="bolo spaces" style={{borderRadius: "3px"}} />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      <h3 style={{color: "#625b4b", fontWeight: "700", fontSize: "1.7rem"}}>Private Meeting Space Half Day Pass</h3>
+                    </Typography>
+
+                    <Typography variant="body2" color="text.secondary">
+                      <p>50,000 XAF /Half Day Pass (no monthly fee).</p>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Button size="small" href="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform" target="_blank">
+                  See Plan Details & Sign Up
+                  </Button>
+                </CardActions>
+              </Card>
+              </Grid>
           
-        <div className="service-row">
-          <img src={office} alt="open area" /> 
-          <h2>Open Desk Monthly</h2>
-          <p> 100,000 XAF/month. This plan renews automatically.</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>
-        </div>
-
-        <div className="service-row">
-          <img src={office2} alt="semi-private area" />
-          <h2>Semi-Private Desk Half Day Pass</h2>
-          <p> 10,000 XAF /Half Day Pass (no monthly fee)</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>
-        </div>
-
-        <div className="service-row">
-          <img src={office2} alt="semi-private area" />
-          <h2>Semi-Private Desk Full Day Pass</h2>
-          <p>  15,000 XAF /Full Day Pass (no monthly fee)</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div> 
-        </div>
-
-        <div className="service-row">
-          <img src={office2} alt="semi-private area" />
-          <h2>Semi-Private Desk Monthly</h2>
-          <p> 125,000 XAF /month. This plan renews automatically.</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>  
-        </div>
-
-        <div className="service-row">
-          <img src={office3} alt="shared-private area" />
-          <h2>Shared Private Office - Half Day Pass</h2>
-          <p>   15,000 XAF /Half Day Pass (no monthly fee)</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div> 
-        </div>
-
-        <div className="service-row">
-          <img src={office3} alt="shared-private area" /> 
-          <h2>Shared Private Office - Full Day Pass</h2>
-          <p> 20,000 XAF /Full Day pass (no monthly fee).</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div> 
-        </div>
-
-        <div className="service-row">
-          <img src={office3} alt="shared-private area" /> 
-          <h2>Shared Private Office - Monthly</h2>
-          <p> 150,000 XAF /month. This plan renews automatically.</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div> 
-        </div>
-
-        <div className="service-row">
-          <img src={office4} alt="private-office area" /> 
-          <h2>Private Office Half Day Pass</h2>
-          <p> 20,000 XAF /Half Day Pass (no monthly fee)</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div> 
-        </div>
-
-        <div className="service-row">
-          <img src={office5} alt="private-office area" /> 
-          <h2>Private Office Full Day Pass</h2>
-          <p> 30,000 XAF /Full Day Pass (no monthly fee).</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div> 
-        </div>
-
-        <div className="service-row">
-          <img src={office4} alt="private-office area" /> 
-          <h2>Private Office Monthly</h2>
-          <p> 250,000 XAF /month. This plan renews automatically.</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div> 
-        </div>
-
-        <div className="service-row">
-          <img src={office6} alt="private-office area" /> 
-          <h2> Large Mix-Use Space Half Day Pass </h2>
-          <p>  100,000 XAF /Half Day Pass (no monthly fee).</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>
-        </div>
-
-        <div className="service-row">
-          <img src={office6} alt="private-office area" />  
-          <h2>Large Mix-Use Space Full Day Pass</h2>
-          <p> 200,000 XAF /Full Day Pass (no monthly fee).</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>
-        </div>
-
-        <div className="service-row">
-          <img src={office7} alt="private-office area" /> 
-          <h2>Executive Conference Room (Dallas) Half Day Pass</h2>
-          <p>  75,000 XAF /Half Day Pass (no monthly fee). </p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div> 
-        </div>
-
-        <div className="service-row">
-          <img src={office7} alt="private-office area" />
-          <h2>Executive Conference Room (Dallas) Full Day Pass</h2>
-          <p>  100,000 XAF /Full Day Pass (no monthly fee).</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>  
-        </div>
-
-        <div className="service-row">
-          <img src={office7} alt="private-office area" />
-          <h2>Private Meeting Space Full Day Pass</h2>
-          <p> 75,000 XAF /Full Day Pass (no monthly fee).</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>  
-        </div>
-
-        <div className="service-row">
-          <img src={office7} alt="private-office area" />
-          <h2>Private Meeting Space Half Day Pass</h2>
-          <p>  50,000 XAF /Half Day Pass (no monthly fee).</p>
-          <div class="btns">
-                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"
-                  target="_blank" class="btn-book animated fadeInUp">See Plan Details & Sign Up</Link>
-          </div>  
-        </div>
+          
+        </Grid>
+       </Container>
 
 
-      </div>
+
+  
 
 
       <div className="backarrow">

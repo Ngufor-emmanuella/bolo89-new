@@ -1,10 +1,4 @@
 /* code to shift navbar */
-
-/* .MuiPaper-root {
-  position: relative;
-  top:
-} */
-
 .navigation-menu {
   list-style-type: none;
   display: flex;
@@ -44,3 +38,9 @@
   color: #000;
 }
 
+.lastlist {
+  border: 2px solid #cda45e;
+  padding: 10px;
+  border-radius: 16px;
+
+}

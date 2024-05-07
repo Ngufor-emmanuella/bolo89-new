@@ -1,0 +1,18 @@
+.box {
+  padding: 6rem;
+}
+
+
+h1 {
+  color: #625b4b;
+  padding-bottom: 2rem;
+}
+
+.arrow {
+  background-color: none;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}

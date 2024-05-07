@@ -8,8 +8,8 @@ import Events from './pages/Events';
 import Career from './pages/Career';
 import Gallery from './pages/Gallery';
 import Uploadresume from './pages/Uploadresume';
-import Menu from './pages/Menu';
-import Pagenotfound from './pages/Pagenotfound';
+import Contact from './pages/Contact';
+import Bookoffice from './pages/Bookoffice';
 
 function App() {
   return (
@@ -23,10 +23,10 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/career" element={<Career />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/Uploadresume" element={<Uploadresume />} />
-          
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/pagenotfound" element={<Pagenotfound />} />
+          <Route path="/bookoffice" element={<Bookoffice />} />
+
         </Routes>
       </BrowserRouter>
     </div>

@@ -5,17 +5,13 @@ import '../styles/Time.css';
 
 const Time = () => {
   return (
-    <div className="time">
-      <Box style={{ bgcolor: "pink"}}>
-        {/* <AppBar style={{bgcolor: "red", color: "red" }}> */}
-          <Box>
-
-            <ul>
+    <Box className="time">
+      
+            <ul style={{ display: "flex", listStyleType: "none", marginLeft: '1rem', marginRight: '1rem'}}>
               <li> (+237) 652 921 000 | 693 339 340 </li>
               <li> Mon - Fri 8am - 9pm | Sat. 10am - 6pm </li>
             </ul>
-
-            <ul>
+            <ul style={{ display: "flex", listStyleType: "none", textDecoration: "none"}}>
               <li>
                 <NavLink to={"/"}>En</NavLink>
               </li>
@@ -24,13 +20,8 @@ const Time = () => {
 
               </li>
             </ul>
-
-          </Box>
-        {/* </AppBar> */}
-
-      </Box>
-      
-    </div>
+    
+    </Box>
   );
 };
 

@@ -4,7 +4,7 @@ import { NavLink }from 'react-router-dom';
 import './../styles/Header.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import Log from '../images/bolo-white.png';
-
+import { alpha } from '@mui/system';
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -46,15 +46,19 @@ const Header = () => {
                   <NavLink to={"/gallery"}> Gallery </NavLink>
                 </li>
                 <li>
+                  <NavLink to={"/contact"}> Contact </NavLink>
+                </li>
+                <li>
                   <NavLink to={"/Uploadresume"}> Upload Resume </NavLink>
                 </li>
 
-                <li>
-                  <NavLink to={"/menu"}> Menu</NavLink>
+                <br></br>
+                <br></br>
+
+                <li className="lastlist">
+                  <NavLink to={"/bookoffice"}> BOOK AN OFFICE </NavLink>
                 </li>
-                <li>
-                  <NavLink to={"/pagenotfound"}> Page not found</NavLink>
-                </li>
+
               </ul>
     </Box>
   );
@@ -62,8 +66,8 @@ const Header = () => {
     <div>
       
       <Box>
-       
-        <AppBar component={"nav"} sx={{ bgcolor: "rgba(12, 11, 9, 0.8)", borderBottom: "rgba(12, 11, 9, 0.6);" }}>
+      
+        <AppBar component={"nav"} sx={{ bgcolor: alpha('#000000', 0.7), borderBottom: 'rgba(12, 11, 9, 0.6)'}}>
           <Toolbar>
 
           <Typography color={"white"} varient="h5" component="div" sx={{ flexGrow: 1}}>
@@ -81,6 +85,11 @@ const Header = () => {
             </IconButton>
 
             <Box sx={ {display: { xs: "none", sm: "block" }} } >
+
+            <ul style={{ display: "flex", listStyleType: "none", marginLeft: '1rem', marginRight: '1rem'}}>
+              <li> (+237) 652 921 000 | 693 339 340 </li>
+              <li> Mon - Fri 8am - 9pm | Sat. 10am - 6pm </li>
+            </ul>
               <ul className="navigation-menu">
                 <li>
                   <NavLink activeClassName="active" to={"/"}> Home</NavLink>
@@ -104,15 +113,19 @@ const Header = () => {
                   <NavLink to={"/gallery"}> Gallery </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/Uploadresume"}> Upload Resume </NavLink>
+                  <NavLink to={"/contact"}> Contact </NavLink>
                 </li>
+              
 
                 <li>
-                  <NavLink to={"/menu"}> Menu</NavLink>
+                  <NavLink to={"/Uploadresume"}> Upload Resume </NavLink>
                 </li>
-                <li>
-                  <NavLink to={"/pagenotfound"}> Page not found</NavLink>
+                
+
+                <li className="lastlist">
+                  <NavLink to={"/bookoffice"}> BOOK AN OFFICE </NavLink>
                 </li>
+
               </ul>
 
             </Box>
