@@ -1,7 +1,6 @@
 .home-about {
   background-color: #f0e2e2;
-  margin-top: 3%;
-  height: 100vh;
+  height: auto;
   width: 100%;
 
 }
@@ -40,10 +39,6 @@ h3 {
   color: #cda45e;
   padding-bottom: 1rem;
   padding-top: 1rem;
-}
-
-.stand-for {
-  margin-top: 10%;
 }
 
 .vision {

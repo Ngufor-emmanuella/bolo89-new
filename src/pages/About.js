@@ -10,7 +10,7 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 const About = () => {
   return (
     <Layout>
-      <div className="homeabout" style={{ backgroundColor: `#f0e2e2`, position: "relative", top: "-2rem" }}>
+      <div className="homeabout" style={{ backgroundColor: "#f0e2e2" }}>
 
         <div className="side"> 
 

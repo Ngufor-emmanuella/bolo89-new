@@ -102,8 +102,8 @@ const Gallery = () => {
           </Container>
 
          <div className="arrow">
-           <Link to="/services"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
-           <Link to="/events"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+           <Link to="/career"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+           <Link to="/contact"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
         </div>
     </Layout>
   )

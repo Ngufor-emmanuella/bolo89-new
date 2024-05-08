@@ -37,7 +37,7 @@ const Events = () => {
                 <CardMedia component="img" image={firstdevx} alt="bolo spaces" style={{ borderRadius: "3px", maxWidth: "100%", height: "auto", objectFit: "cover" }} />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    <h4>Grid: A Powerful Tool for Web Layout Design</h4>
+                    <h4>Backend Brilliance and Server Side Development</h4>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -50,7 +50,7 @@ const Events = () => {
                 <CardMedia component="img" image={bitcoin} alt="bolo spaces" style={{ borderRadius: "3px", maxWidth: "100%", height: "auto", objectFit: "cover" }} />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    <h4>Grid: A Powerful Tool for Web Layout Design</h4>
+                    <h4>Unlocking Bitcoin's Full Potential</h4>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -63,7 +63,7 @@ const Events = () => {
                 <CardMedia component="img" image={event} alt="bolo spaces" style={{ borderRadius: "3px", maxWidth: "100%", height: "auto", objectFit: "cover" }} />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    <h4>Grid: A Powerful Tool for Web Layout Design</h4>
+                    <h4>A Conversation About Women Entrepreneurs And Development Barriers To Success</h4>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -76,7 +76,7 @@ const Events = () => {
                 <CardMedia component="img" image={seconddevx} alt="bolo spaces" style={{ borderRadius: "3px", maxWidth: "100%", height: "auto", objectFit: "cover" }} />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    <h4>Grid: A Powerful Tool for Web Layout Design</h4>
+                    <h4>Devops Dynamics: Automation And Collaboration</h4>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -89,7 +89,7 @@ const Events = () => {
                 <CardMedia component="img" image={thirddevx} alt="bolo spaces" style={{ borderRadius: "3px", maxWidth: "100%", height: "auto", objectFit: "cover" }} />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    <h4>Grid: A Powerful Tool for Web Layout Design</h4>
+                    <h4>Exploring Thrends And Innovation Of Mobile Development</h4>
                   </Typography>
                 </CardContent>
               </CardActionArea>

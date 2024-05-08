@@ -5,6 +5,8 @@ import './../styles/Header.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import Log from '../images/bolo-white.png';
 import { alpha } from '@mui/system';
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -123,7 +125,7 @@ const Header = () => {
                 
 
                 <li className="lastlist">
-                  <NavLink to={"/bookoffice"}> BOOK AN OFFICE </NavLink>
+                  <Link to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"  target="_blank" rel="noopener noreferrer"> BOOK AN OFFICE </Link>
                 </li>
 
               </ul>
