@@ -11,6 +11,7 @@
   align-items: center;
   margin-left: 4rem;
   margin-right: 5rem;
+ 
 }
 
 .grow-image {
@@ -31,14 +32,14 @@
   font-size: 18px;
   word-spacing: 0.2%;
   line-height: 3.6vh;
+  margin-left: 15px;
 }
 
 h3 {
   font-weight: 600;
   font-size: 26px !important;
   color: #cda45e;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .vision {
@@ -49,7 +50,7 @@ h3 {
 
 .why-us {
   background-color: #fff;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 
@@ -93,9 +94,9 @@ h3 {
   align-items: center;
   margin-left: 5rem;
   margin-right: 4rem;
-  margin-bottom: 5rem;
- 
+  padding-bottom: 2rem;
 }
+
 .box {
   line-height: 5vh;
   padding-top: 13%;
@@ -113,7 +114,7 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   padding: 0;
-  /* margin: 20px 0; */
+ margin-left: 0;
   color: #625b4be1;
 }
 
@@ -135,17 +136,17 @@ h3 {
   border: 3px solid #efefef;
   box-shadow: #aaaaaa;
   margin-right: 1rem;
-  height: 65vh;
+  height: 77vh;
 }
 
-.first-row:hover {
+/* .first-row:hover {
   background-color: #cda45e;
   color: #fff;
 }
 
 .box:hover {
   color: #fff;
-}
+} */
 
 .backarrow {
   background-color: #fff;
@@ -153,6 +154,7 @@ h3 {
   list-style-type: none;
   justify-content: center;
   align-items: center;
+
 }
 
 /* mobile design */
@@ -203,6 +205,8 @@ h3 {
 
 .first-row {
   margin-bottom: 2rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
 }
 
 .box {
@@ -210,5 +214,12 @@ h3 {
   padding-right: 5%;
 }
 
+.change-black {
+  margin-left: 6px;
+  margin-right: 0;
+}
 
+.standfor {
+  padding-top: 3rem;
+}
 }

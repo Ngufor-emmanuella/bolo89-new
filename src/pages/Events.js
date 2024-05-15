@@ -100,8 +100,8 @@ const Events = () => {
           </Container>
 
          <div className="arrow">
-           <Link to="/blog"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
-           <Link to="/career"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+           <Link to="/blog"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
+           <Link to="/career"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
         </div>
     </Layout>
   )

@@ -7,7 +7,7 @@ import Blog from './pages/Blog';
 import Events from './pages/Events';
 import Career from './pages/Career';
 import Gallery from './pages/Gallery';
-import Uploadresume from './pages/Uploadresume';
+// import Uploadresume from './pages/Uploadresume';
 import Contact from './pages/Contact';
 import Bookoffice from './pages/Bookoffice';
 
@@ -24,7 +24,7 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Uploadresume" element={<Uploadresume />} />
+          {/* <Route path="/Uploadresume" element={<Uploadresume />} /> */}
           <Route path="/bookoffice" element={<Bookoffice />} />
 
         </Routes>

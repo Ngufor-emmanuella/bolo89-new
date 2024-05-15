@@ -1,14 +1,14 @@
 import React from 'react';
 import Layout from './../components/Layout';
 import { Link } from "react-router-dom";
-import Bolo from "../images/bolo89-11.jpg";
+import palour from "../images/parlor.png";
 import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout className="home">
       
-      <div className="home" style={{ backgroundImage: `url(${Bolo})` }} >
+      <div className="homing" >
         <div className="headerContainer">
           <h1>A workspace for all types of <span>business </span> </h1>
           <h2>Our coworking spaces let you choose to work with others in an open-plan area, a shared office or private office.</h2>
@@ -21,6 +21,10 @@ const Home = () => {
               <button>BOOK AN OFFICE</button>
             </Link>
           </div> 
+        </div>
+
+        <div className="parlour">
+          <img className="palimg" src={palour} alt="Bolo-home"/>
         </div>
       </div>
 

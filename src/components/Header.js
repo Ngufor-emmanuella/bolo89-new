@@ -50,15 +50,16 @@ const Header = () => {
                 <li>
                   <NavLink to={"/contact"}> Contact </NavLink>
                 </li>
-                <li>
+                
+                {/* <li>
                   <NavLink to={"/Uploadresume"}> Upload Resume </NavLink>
-                </li>
+                </li> */}
 
                 <br></br>
                 <br></br>
 
                 <li className="lastlist">
-                  <NavLink to={"/bookoffice"}> BOOK AN OFFICE </NavLink>
+                  <NavLink to="https://docs.google.com/forms/d/e/1FAIpQLSftyEiEOoA8ERh_k9F29VVXQXwXrxJm3k06QaDw6_bHxTiq3Q/viewform"> BOOK AN OFFICE </NavLink>
                 </li>
 
               </ul>
@@ -69,14 +70,26 @@ const Header = () => {
       
       <Box>
       
-        <AppBar component={"nav"} sx={{ bgcolor: alpha('#000000', 0.7), borderBottom: 'rgba(12, 11, 9, 0.6)'}}>
+        <AppBar component={"nav"} sx={{ bgcolor: alpha('#000000', 0.7), borderBottom: 'rgba(12, 11, 9, 0.6)', width: "100%", height: "12%"}}>
           <Toolbar>
 
           <Typography color={"white"} varient="h5" component="div" sx={{ flexGrow: 1}}>
-            <NavLink to={"/"}>
-             <img src={Log} alt="logo" height={"40"} />
-           </NavLink>
-          </Typography>
+
+            <Box sx={ {display: { xs: "flex", sm: "flex", justifyContent: "space-between" }} }>
+          <ul style={{ display: "flex", listStyleType: "none", marginLeft: '1rem', marginRight: '1rem', fontSize: "15px"}}>
+              <li> (+237) 652 921 000 | 693 339 340 </li>
+              <li> Mon - Fri 8am - 9pm | Sat. 10am - 6pm </li>
+          </ul>
+
+          <ul style={{ display: "flex", listStyleType: "none"}}>
+              <li style={{ marginRight: "1rem"}}>
+                <NavLink to={"/"}style={{textDecoration: "none", fontSize: "15px", color: "#cda45e"}}>En</NavLink>
+              </li>
+              <li>
+              <NavLink to={"/"}style={{color: "#fff", marginRight: "5rem", textDecoration: "none", fontSize: "15px"}}>Fr</NavLink>
+              </li>
+            </ul>
+            </Box>
             
             <IconButton InputLabelProps={{ className: "menu-icon"}} aria-label="open drawer" edge="start" sx={{
               ml:2, display: { sm: "none"},
@@ -86,12 +99,12 @@ const Header = () => {
               <MenuIcon />
             </IconButton>
 
-            <Box sx={ {display: { xs: "none", sm: "block" }} } >
+            <Box sx={ {display: { xs: "none", sm: "flex", justifyContent: "space-between" }} } >
 
-            <ul style={{ display: "flex", listStyleType: "none", marginLeft: '1rem', marginRight: '1rem'}}>
-              <li> (+237) 652 921 000 | 693 339 340 </li>
-              <li> Mon - Fri 8am - 9pm | Sat. 10am - 6pm </li>
-            </ul>
+            <NavLink to={"/"} >
+              <img src={Log} alt="logo" height={"40"} style={{marginLeft: "1rem"}}/>
+             </NavLink>
+
               <ul className="navigation-menu">
                 <li>
                   <NavLink activeClassName="active" to={"/"}> Home</NavLink>
@@ -119,9 +132,9 @@ const Header = () => {
                 </li>
               
 
-                <li>
+                {/* <li>
                   <NavLink to={"/Uploadresume"}> Upload Resume </NavLink>
-                </li>
+                </li> */}
                 
 
                 <li className="lastlist">
@@ -131,6 +144,7 @@ const Header = () => {
               </ul>
 
             </Box>
+            </Typography>
           </Toolbar>
         </AppBar>
 

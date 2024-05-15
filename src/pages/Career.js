@@ -42,8 +42,8 @@ const Career = () => {
         </TableContainer>
       
         <div className="arrow">
-             <Link to="/events"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
-             <Link to="/gallery"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+             <Link to="/events"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
+             <Link to="/gallery"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
         </div>
 
       </div>

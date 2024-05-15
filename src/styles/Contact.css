@@ -1,0 +1,32 @@
+.contact-form {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 4rem 2rem 4rem;
+
+}
+
+.sec-head {
+  color: #cda45e;
+  font-size: 25px;
+  margin-left: 1rem;
+}
+
+.first-head {
+  color: #cda45e;
+  margin-left: 1rem;
+  font-size: 40px;
+}
+
+.paragraph {
+  width: 65%;
+}
+
+.put-up {
+  margin-top: -1rem;
+}
+
+h3 {
+  color: #cda45e;
+  font-size: 15px;
+  font-weight: 600;
+}

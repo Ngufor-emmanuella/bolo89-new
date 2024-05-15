@@ -18,7 +18,7 @@ import office1 from '../images/office1.jpg';
 
 const Services = () => {
   return (
-    <Layout>
+    <Layout className="serve">
       <div className="services">
 
       <div className="service-title">
@@ -38,10 +38,10 @@ const Services = () => {
 
        <Container maxWidth="lg">
         
-        <Grid container spacing={5} style={{marginTop: "20px"}}>
+        <Grid container spacing={3} align-items="flex-start">
          
             <Grid item xs={12} sm={6} ms={6} >
-              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+              <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office1b} alt="bolo spaces" style={{borderRadius: "3px"}} />
                   <CardContent>
@@ -66,7 +66,7 @@ const Services = () => {
               </Grid>
 
               <Grid item xs={12} sm={6} ms={6} >
-              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+              <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office2} alt="bolo spaces" style={{borderRadius: "3px"}} />
                   <CardContent>
@@ -91,7 +91,7 @@ const Services = () => {
               </Grid>
 
               <Grid item xs={12} sm={6} ms={6} >
-              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+              <Card sx={{maxWidth: "645" }}>
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office3} alt="bolo spaces" style={{borderRadius: "3px"}} />
                   <CardContent>
@@ -118,7 +118,7 @@ const Services = () => {
 
 
               <Grid item xs={12} sm={6} ms={6} >
-              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px", height:"72vh"}}>
+              <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office4} alt="bolo spaces" style={{borderRadius: "3px"}} />
                   <CardContent>
@@ -143,7 +143,7 @@ const Services = () => {
               </Grid>
 
               <Grid item xs={12} sm={6} ms={6} >
-              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+              <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office1} alt="bolo spaces" style={{borderRadius: "3px"}} />
                   <CardContent>
@@ -167,7 +167,7 @@ const Services = () => {
               </Grid>
 
               <Grid item xs={12} sm={6} ms={6} >
-              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+              <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office6} alt="bolo spaces" style={{borderRadius: "3px"}} />
                   <CardContent>
@@ -190,7 +190,7 @@ const Services = () => {
               </Grid>
 
               <Grid item xs={12} sm={6} ms={6} >
-              <Card sx={{maxWidth: 645 }} style={{padding:"10px", marginBottom:"30px"}}>
+              <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office7} alt="bolo spaces" style={{borderRadius: "3px"}} />
                   <CardContent>
@@ -216,11 +216,12 @@ const Services = () => {
        </Container>
 
       <div className="backarrow">
-        <Link to="/about"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
-        <Link to="/blog"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+        <Link to="/about"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
+        <Link to="/blog"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
       </div>
 
       </div>
+      
     </Layout>
   )
 }

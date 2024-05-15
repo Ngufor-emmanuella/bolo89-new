@@ -1,42 +1,41 @@
 .home {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  height: auto;
+  background-color: #fff;
+  width: 100%;
 }
 
-.home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.homing {
+  display: flex;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  justify-content: center;
+  align-items: center;
 }
+
+.palour {
+  width: 50%;
+ 
+}
+
+.palimg {
+  width: 38rem;
+  margin-right: 6rem;
+}
+
 
 .headerContainer {
-  width: auto;
-  margin-left: 30px;
-  position: relative;
-  z-index: 5;
+  width: 80%;
+  margin-left: 35px;
 }
 
 .headerContainer h1 {
   justify-content: center;
   align-items: center;
   margin: 0;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
-  width: 65%;
+  color: #000;
+  width: 100%;
   margin-left: 5%;
 }
 
@@ -49,16 +48,16 @@
   margin-bottom: 10px 0 0 0;
   font-size: 22px;
   font-weight: lighter;
-  color: #eee;
-  width: 55%;
+  color: #000;
+  width: 100%;
   margin-left: 5%;
 }
 
 .headerContainer button {
-  background: none;
+  background: #cda45e;
   margin-top: 20px;
-  border: 2px solid #cda45e;
-  border-radius: 20px;
+  border: 2px solid #d8a651;
+  border-radius: 15px;
   cursor: pointer;
   height: 43px;
   width: 180px;
@@ -69,11 +68,6 @@
   margin-left: 5%;
 }
 
-.secButton {
-  color: red;
- margin-right: 5rem;
-}
-
 .secButton button {
   margin-left: 1rem;
 }
@@ -81,7 +75,7 @@
 .headerContainer button:hover {
   /* background-color: #07090a; */
   background-color: #fff;
-  color:  #cda45e;
+  color:  #000;
   cursor: pointer;
   transition: 0.3s ease-in;
 }
@@ -92,12 +86,17 @@
   .home {
     justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .homing {
+    display: block;
   }
 
   .headerContainer {
     margin-left: 0;
     border-radius: 10px;
-    width: 90%;
+    width: 97%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,17 +105,15 @@
 
   .headerContainer h1 {
     font-size: 35px;
-    width: 100%;
-    margin-left: 10%;
-    color: #fff;
+    width: 90%;
+    padding-top: 2rem;
+   
   }
 
   .headerContainer h2 {
     font-size: 20px;
     font-weight: lighter;
-    color: #eee;
     width: 90%;
-    padding-top: 8%;
   }
 
   .home .headerContainer p {
@@ -124,30 +121,21 @@
     color: white;
   }
 
-  .headerContainer button {
-    background-color: white;
-    color: #121619;
-    margin-bottom: 30px;
-  }
-
   .get-started {
     display: flex;
     padding-top: 5%;
-    margin-right: 10%;
     width: 100%;
+    margin-left: 20%;
   }
 
   .headerContainer button {
-    background: none;
-    color: #fff;
-  }
+    width: 134px;
+    font-size: 13px;
+    font-weight: 700;
+}
 
-  .headerContainer button:hover {
-    background-color: #fff;
-    color:  #cda45e;
-    cursor: pointer;
-    transition: 0.3s ease-in;
-  }
-
+.palimg {
+  width: 23rem;
+}
   
 }

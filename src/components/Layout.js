@@ -1,15 +1,15 @@
 import React from 'react'
 import Header from './Header';
-// import Time from './Time';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
     <div>
-      {/* <Time /> */}
       <Header />
       <div>
         {children}
       </div>
+      <Footer />
     </div>
   )
 }

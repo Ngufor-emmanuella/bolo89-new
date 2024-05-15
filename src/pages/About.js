@@ -15,7 +15,7 @@ const About = () => {
         <div className="side"> 
 
         <div className="stand-for">
-          <h3>What does the 89 stand for?</h3>
+          <h3 className="standfor"style={{marginTop: "3rem"}}>What does the 89 stand for?</h3>
           <p className="change-black">
               89 is significant for our standard weekday hours of operation – 8am – 9pm (mind you our members get 24/7
               access!).
@@ -57,7 +57,7 @@ const About = () => {
         </div>
 
         <div className="row">
-          <div className="first-row">
+          <div className="first-row long">
             <div className="box">
               <span>01</span>
               <h4>Premium Amenities</h4>
@@ -66,10 +66,10 @@ const About = () => {
                 advocate for your business success.
               </p>
               <ul>
-                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem'}} /> Complimentary Coffee, Tea and Water</li>
-                <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem'}} /> Boutique, hotel lobby-like lounge area.</li>
-                <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> Fully furnished reception areas.</li>
-                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }}  /> Complimentary High Speed Internet</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem', position: 'relative', top: '0.5rem'}} /> Complimentary Coffee, Tea and Water</li>
+                <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem', position: 'relative', top: '0.5rem'}} /> Boutique, hotel lobby-like lounge area.</li>
+                <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem', position: 'relative', top: '0.5rem' }} /> Fully furnished reception areas.</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem', position: 'relative', top: '0.5rem' }}  /> Complimentary High Speed Internet</li>
               </ul>
             </div>
           </div>
@@ -83,9 +83,9 @@ const About = () => {
                 your work day or critical meetings.
               </p>
               <ul>
-                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> Backup Generator.</li>
-                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> 24/7 Member Access.</li>
-                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> Security Guard on Duty 24/7 and water reservoir.</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem', position: 'relative', top: '0.5rem' }} /> Backup Generator.</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem', position: 'relative', top: '0.5rem' }} /> 24/7 Member Access.</li>
+                <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem', position: 'relative', top: '0.5rem' }} /> Security Guard on Duty 24/7 and water reservoir.</li>
             </ul>
             </div>
             </div>
@@ -99,9 +99,9 @@ const About = () => {
                   of all we do. It’s the little things that make all the difference!
                 </p>
                 <ul>
-                  <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem', position: 'relative', top: '0.5rem' }} /> Free Access to Events.</li>
-                  <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem',  position: 'relative', top: '0.5rem' }} /> Conference Room Hours Included.</li>
-                  <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '2rem',  position: 'relative', top: '0.5rem' }} /> Discounted Space Rentals.</li>
+                  <li> <CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem', position: 'relative', top: '0.5rem' }} /> Free Access to Events.</li>
+                  <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem',  position: 'relative', top: '0.5rem' }} /> Conference Room Hours Included.</li>
+                  <li><CheckCircleOutlineIcon style={{ color: '#cda45e', fontSize: '1.7rem',  position: 'relative', top: '0.5rem' }} /> Discounted Space Rentals.</li>
                 </ul>
             </div>
           </div>
@@ -113,8 +113,8 @@ const About = () => {
 
        
           <div className="backarrow">
-            <Link to="/"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
-            <Link to="/services"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '3vw'}} /></Link>
+            <Link to="/"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
+            <Link to="/services"><ArrowCircleRightIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
           </div>
     
       </div>
