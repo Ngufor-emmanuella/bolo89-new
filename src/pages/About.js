@@ -43,7 +43,6 @@ const About = () => {
 
         <div className="grow-image">
           <img src={Growimage} alt="Bolo89 work space" />
-
         </div>
 
         </div>

@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 import { Box, AppBar, Typography,Toolbar, IconButton, Drawer, Divider } from '@mui/material';
+import WatchLaterTwoToneIcon from '@mui/icons-material/WatchLaterTwoTone';
+import PhoneIphoneTwoToneIcon from '@mui/icons-material/PhoneIphoneTwoTone';
+
 import { NavLink }from 'react-router-dom';
 import './../styles/Header.css';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -76,9 +79,9 @@ const Header = () => {
           <Typography color={"white"} varient="h5" component="div" sx={{ flexGrow: 1}}>
 
             <Box sx={ {display: { xs: "flex", sm: "flex", justifyContent: "space-between" }} }>
-          <ul style={{ display: "flex", listStyleType: "none", marginLeft: '1rem', marginRight: '1rem', fontSize: "15px"}}>
-              <li> (+237) 652 921 000 | 693 339 340 </li>
-              <li> Mon - Fri 8am - 9pm | Sat. 10am - 6pm </li>
+          <ul style={{ display: "flex", listStyleType: "none", marginLeft: '1rem', fontSize: "15px"}}>
+              <li style={{marginRight: "1rem"}}> <WatchLaterTwoToneIcon style={{ color: "#cca053",  fontSize: "1.3rem", borderRadius: "1px", position: "relative", top: "0.2rem"}}/> <span>(+237) 652 921 000 | 693 339 340 </span></li>
+              <li> <PhoneIphoneTwoToneIcon style={{ color: "#cca053",  fontSize: "1.3rem", borderRadius: "1px", position: "relative", top: "0.2rem" }}/> <span>Mon - Fri 8am - 9pm | Sat. 10am - 6pm</span> </li>
           </ul>
 
           <ul style={{ display: "flex", listStyleType: "none"}}>

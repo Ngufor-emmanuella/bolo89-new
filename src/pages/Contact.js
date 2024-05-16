@@ -1,6 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { Grid, Card, CardContent, TextField, Button } from '@mui/material';
+import PlaceTwoToneIcon from '@mui/icons-material/PlaceTwoTone';
+import WatchLaterTwoToneIcon from '@mui/icons-material/WatchLaterTwoTone';
+import EmailTwoToneIcon from '@mui/icons-material/EmailTwoTone';
+import PhoneIphoneTwoToneIcon from '@mui/icons-material/PhoneIphoneTwoTone';
 import '../styles/Contact.css';
 
 
@@ -14,26 +18,26 @@ const Contact = () => {
 
      
         <div>
-          <h3>Location:</h3>
+          <h3><PlaceTwoToneIcon style={{backgroundColor: "#cca053", color: "#8a8282",  fontSize: "2.2rem", borderRadius: "20px", padding: "3px"}} /> <span className="location">Location:</span></h3>
           <p className="paragraph">1280 RUE de Deido Bonanjo Deido, Douala
             Between Total Bonateki and Pharmacy Akwa Nord<br></br>
           </p>
         </div>
 
         <div  className="put-up">
-          <h3>Open Hours:</h3>
+          <h3> <WatchLaterTwoToneIcon style={{backgroundColor: "#cca053", color: "#8a8282",  fontSize: "2.2rem", borderRadius: "20px", padding: "6px"}} /><span className="location"> Open Hours:</span></h3>
           <p>Mon - Fri 8am - 9pm
             <br></br> Sat 10am - 6pm
           </p>
         </div>
 
         <div className="put-up">
-          <h3>Email:</h3>
+          <h3> <EmailTwoToneIcon style={{backgroundColor: "#cca053", color: "#8a8282",  fontSize: "2.2rem", borderRadius: "20px", padding: "6px"}}/> <span className="location">Email:</span></h3>
           <p>info@bolo89.com</p>
         </div>
 
         <div className="put-up">
-          <h3>Call:</h3>
+          <h3> <PhoneIphoneTwoToneIcon style={{backgroundColor: "#cca053", color: "#8a8282",  fontSize: "2.2rem", borderRadius: "20px", padding: "6px"}}/> <span className="location">Call:</span></h3>
           <p>(+237) 652 921 000 | 693 339 340 </p>
         </div>
       </div>

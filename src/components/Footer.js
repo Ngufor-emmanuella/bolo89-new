@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="mainfooter">
         
           <div>
-            <img src={logo} alt="bolo89 logo" style={{background: "#000", marginLeft: "2rem", padding: "15px", marginBottom: "1.5rem"}}/>
+            <img src={logo} alt="bolo89 logo" style={{background: "#000", marginLeft: "1rem", padding: "15px", marginBottom: "1.5rem"}}/>
 
             <p>
                     <strong>1280 Rue de Deido-Bonanjo</strong>
