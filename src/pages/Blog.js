@@ -21,7 +21,7 @@ const Blog = () => {
           <p> Checkout our Blog post ...</p>
         </Typography>
         
-        <Grid container spacing={5} style={{marginTop: "20px"}}>
+        <Grid container spacing={5} style={{marginTop: "20px"}} className="two">
 
               <Grid item xs={12} sm={6} ms={6}>
                 <Card sx={{ maxWidth: 545 }} style={{ padding: "10px", marginBottom: "30px" }}>

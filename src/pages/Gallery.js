@@ -26,7 +26,7 @@ const Gallery = () => {
        </Typography>
 
 
-        <Grid container spacing={1} style={{marginTop: "20px"}}>
+        <Grid container spacing={1} style={{marginTop: "20px"}} className="five">
 
           <Grid item xs={12} sm={3} ms={3}>
             <Card sx={{ maxWidth: 500 }} style={{ marginBottom: "10px" }}>

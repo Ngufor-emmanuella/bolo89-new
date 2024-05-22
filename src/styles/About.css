@@ -71,7 +71,22 @@
   word-spacing: 0.2%;
   line-height: 3.6vh;
   margin-left: 15px;
+  animation: slideIn 4s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 
 h3 {
   font-weight: 600;
@@ -133,6 +148,19 @@ h3 {
   margin-left: 5rem;
   margin-right: 4rem;
   padding-bottom: 2rem;
+  animation: slideIn 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .box {
@@ -174,17 +202,8 @@ h3 {
   border: 3px solid #efefef;
   box-shadow: #aaaaaa;
   margin-right: 1rem;
-  height: 77vh;
+  height: 80vh;
 }
-
-/* .first-row:hover {
-  background-color: #cda45e;
-  color: #fff;
-}
-
-.box:hover {
-  color: #fff;
-} */
 
 .backarrow {
   background-color: #fff;
@@ -192,8 +211,11 @@ h3 {
   list-style-type: none;
   justify-content: center;
   align-items: center;
-
 }
+
+
+
+
 
 /* mobile design */
 
@@ -260,4 +282,46 @@ h3 {
 .standfor {
   padding-top: 3rem;
 }
+
+.grow-image::before {
+  position: absolute;
+  left: 1rem;
+  top: 76rem;
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  content: "";
+  border-left: 5px solid #cda45e;
+  border-top: 5px solid #cda45e;
+  transition: 0.5s;
+}
+
+.grow-image::after {
+  position: absolute;
+  right: 0.7rem;
+  bottom: -49rem;
+  width: 45px;
+  height: 45px;
+  z-index: 2;
+  content: "";
+  border-right: 5px solid #cda45e;
+  border-bottom: 5px solid #cda45e;
+  transition: 0.5s;
+}
+
+.grow-image:hover {
+  transform: scale(1.03);
+}
+
+.grow-image:hover::before {
+  left: -0.5rem;
+    top: -3rem;
+}
+
+.grow-image:hover::after {
+  right: -9rem;
+  bottom: -3rem;
+}
+
+
 }

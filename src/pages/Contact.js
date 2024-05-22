@@ -17,7 +17,7 @@ const Contact = () => {
       <h1 className="first-head">Let's Talk</h1>
 
      
-        <div>
+        <div className="put-up">
           <h3><PlaceTwoToneIcon style={{backgroundColor: "#cca053", color: "#8a8282",  fontSize: "2.2rem", borderRadius: "20px", padding: "3px"}} /> <span className="location">Location:</span></h3>
           <p className="paragraph">1280 RUE de Deido Bonanjo Deido, Douala
             Between Total Bonateki and Pharmacy Akwa Nord<br></br>
@@ -43,7 +43,7 @@ const Contact = () => {
       </div>
 
       
-        <Card style={{maxWidth: 750, padding: "20px 5px", marginTop: "9rem"}}>
+        <Card style={{ maxWidth: 950, padding: "20px 5px", marginTop: "8rem"}} className="cardup">
           <CardContent>
             <form>
 

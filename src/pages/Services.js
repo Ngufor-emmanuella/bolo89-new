@@ -15,6 +15,8 @@ import office4 from '../images/office4.jpg';
 import office6 from '../images/office6.jpg';
 import office7 from '../images/office7.jpg';
 import office1 from '../images/office1.jpg';
+import Popup from '../pages/Popup';
+
 
 const Services = () => {
   return (
@@ -24,7 +26,12 @@ const Services = () => {
       <div className="service-title">
         <h2>Services</h2>
         <p>Plans & Pricing </p>
+        <Popup trigger={false}>
+              <h3>My Popup</h3>
+              
+            </Popup>
       </div>
+
       
             <ul className="menu-filters">
               <li>All</li>
@@ -35,12 +42,13 @@ const Services = () => {
               <li>Large Mix-Use Space</li>
               <li>Open Desk</li>
             </ul>
+            
 
        <Container maxWidth="lg">
         
         <Grid container spacing={3} align-items="flex-start">
          
-            <Grid item xs={12} sm={6} ms={6} >
+            <Grid item xs={12} sm={6} ms={6}  className="one">
               <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office1b} alt="bolo spaces" style={{borderRadius: "3px"}} />
@@ -65,7 +73,7 @@ const Services = () => {
               </Card>
               </Grid>
 
-              <Grid item xs={12} sm={6} ms={6} >
+              <Grid item xs={12} sm={6} ms={6}  className="one">
               <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office2} alt="bolo spaces" style={{borderRadius: "3px"}} />
@@ -90,7 +98,7 @@ const Services = () => {
               </Card>
               </Grid>
 
-              <Grid item xs={12} sm={6} ms={6} >
+              <Grid item xs={12} sm={6} ms={6} className="one">
               <Card sx={{maxWidth: "645" }}>
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office3} alt="bolo spaces" style={{borderRadius: "3px"}} />
@@ -117,7 +125,7 @@ const Services = () => {
               </Grid>
 
 
-              <Grid item xs={12} sm={6} ms={6} >
+              <Grid item xs={12} sm={6} ms={6} className="one">
               <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office4} alt="bolo spaces" style={{borderRadius: "3px"}} />
@@ -142,7 +150,7 @@ const Services = () => {
               </Card>
               </Grid>
 
-              <Grid item xs={12} sm={6} ms={6} >
+              <Grid item xs={12} sm={6} ms={6} className="one">
               <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office1} alt="bolo spaces" style={{borderRadius: "3px"}} />
@@ -166,7 +174,7 @@ const Services = () => {
               </Card>
               </Grid>
 
-              <Grid item xs={12} sm={6} ms={6} >
+              <Grid item xs={12} sm={6} ms={6} className="one">
               <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office6} alt="bolo spaces" style={{borderRadius: "3px"}} />
@@ -189,7 +197,7 @@ const Services = () => {
               </Card>
               </Grid>
 
-              <Grid item xs={12} sm={6} ms={6} >
+              <Grid item xs={12} sm={6} ms={6} className="one">
               <Card sx={{maxWidth: 645 }} >
                 <CardActionArea>
                   <CardMedia component="img" height="350" image={office7} alt="bolo spaces" style={{borderRadius: "3px"}} />

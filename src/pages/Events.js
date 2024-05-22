@@ -29,7 +29,7 @@ const Events = () => {
        </Typography>
 
 
-        <Grid container spacing={5} style={{marginTop: "20px"}}>
+        <Grid container spacing={5} style={{marginTop: "20px"}} className="three">
 
           <Grid item xs={12} sm={4} ms={4}>
             <Card sx={{ maxWidth: 345 }} style={{ marginBottom: "30px" }}>

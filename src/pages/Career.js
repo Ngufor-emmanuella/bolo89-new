@@ -5,14 +5,16 @@ import { Link } from "react-router-dom";
 import '../styles/Career.css';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+// import Applyjons from '../pages/Applyjobs';
 
 const Career = () => {
   return (
     <Layout>
       <div className="box"> 
         <h1> Career Opportunities </h1>
+        
 
-        <TableContainer component={Paper} sx={{ maxHeight: '300px' }}>
+        <TableContainer component={Paper} sx={{ maxHeight: "auto" }} className="four">
           <Table aria-label='simple table' stickyHeader>
             <TableHead>
               <TableRow>

@@ -24,7 +24,7 @@
 
 .headerContainer {
   width: 80%;
-  margin-left: 35px;
+  margin-left: 1rem;
 }
 
 .headerContainer h1 {
@@ -80,6 +80,22 @@
   transition: 0.3s ease-in;
 }
 
+.parlour {
+  animation: slideIn 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* mobile view  */
 
 @media only screen and (max-width: 767px) {
@@ -94,7 +110,6 @@
   }
 
   .headerContainer {
-    margin-left: 0;
     border-radius: 10px;
     width: 97%;
     display: flex;
@@ -105,10 +120,9 @@
 
   .headerContainer h1 {
     font-size: 35px;
-    width: 90%;
-    padding-top: 2rem;
-   
-  }
+    width: 92%;
+    padding-top: 5rem;
+}
 
   .headerContainer h2 {
     font-size: 20px;

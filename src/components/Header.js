@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { Box, AppBar, Typography,Toolbar, IconButton, Drawer, Divider } from '@mui/material';
 import WatchLaterTwoToneIcon from '@mui/icons-material/WatchLaterTwoTone';
 import PhoneIphoneTwoToneIcon from '@mui/icons-material/PhoneIphoneTwoTone';
-
 import { NavLink }from 'react-router-dom';
 import './../styles/Header.css';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -22,6 +21,8 @@ const Header = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center'}}>
                 <Typography color={"white"} varient="h5" component="div" sx={{ flexGrow: 1, my: 2 }}>
+
+                
                 <NavLink to={"/"}>
                   <img src={Log} alt="logo" height={"40"} />
                 </NavLink>
@@ -73,7 +74,7 @@ const Header = () => {
       
       <Box>
       
-        <AppBar component={"nav"} sx={{ bgcolor: alpha('#000000', 0.7), borderBottom: 'rgba(12, 11, 9, 0.6)', width: "100%", height: "12%"}}>
+        <AppBar component={"nav"} sx={{ bgcolor: alpha('#000000', 0.7), borderBottom: 'rgba(12, 11, 9, 0.6)', width: "100%", height: "auto"}}>
           <Toolbar>
 
           <Typography color={"white"} varient="h5" component="div" sx={{ flexGrow: 1}}>
@@ -84,7 +85,7 @@ const Header = () => {
               <li> <PhoneIphoneTwoToneIcon style={{ color: "#cca053",  fontSize: "1.3rem", borderRadius: "1px", position: "relative", top: "0.2rem" }}/> <span>Mon - Fri 8am - 9pm | Sat. 10am - 6pm</span> </li>
           </ul>
 
-          <ul style={{ display: "flex", listStyleType: "none"}}>
+          <ul style={{ display: "flex", listStyleType: "none"}} className="mobletime">
               <li style={{ marginRight: "1rem"}}>
                 <NavLink to={"/"}style={{textDecoration: "none", fontSize: "15px", color: "#cda45e"}}>En</NavLink>
               </li>
@@ -96,9 +97,7 @@ const Header = () => {
             
             <IconButton InputLabelProps={{ className: "menu-icon"}} aria-label="open drawer" edge="start" sx={{
               ml:2, display: { sm: "none"},
-            }}
-            onClick={handleDrawerToggle}
-            >
+            }} onClick={handleDrawerToggle} style={{ position: "relative", left: "18rem"}}>
               <MenuIcon />
             </IconButton>
 

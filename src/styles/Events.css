@@ -37,6 +37,23 @@ p {
   margin-left: 1rem;
 }
 
+.three {
+  animation: zoomIn 4s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 @media only screen and (max-width: 767px) {
 
 .sec-header {

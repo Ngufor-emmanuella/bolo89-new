@@ -12,12 +12,12 @@ const Footer = () => {
   return (
     
     <div className="footer">
-       <hr style={{color: "#000", borderBottom: "1px solid #000"}}></hr>
+       <hr style={{color: "#000", borderBottom: "1px solid #000", widht: "100%"}}></hr>
 
         <div className="mainfooter">
         
           <div>
-            <img src={logo} alt="bolo89 logo" style={{background: "#000", marginLeft: "1rem", padding: "15px", marginBottom: "1.5rem"}}/>
+            <img src={logo} alt="bolo89 logo" style={{background: "#000", marginLeft: "0.7rem", padding: "15px", marginBottom: "1.5rem"}} className="footerimg" />
 
             <p>
                     <strong>1280 Rue de Deido-Bonanjo</strong>
@@ -67,7 +67,7 @@ const Footer = () => {
 
         </div>
 
-        <hr style={{color: "#000", borderBottom: "1px solid #000", marginTop: "1rem", marginBottom: "1rem"}}></hr> 
+        <hr style={{color: "#000", borderBottom: "1px solid #000", marginTop: "1rem", marginBottom: "1rem", widht: "100%"}}></hr> 
 
         <div class="copyright" style={{display: "flex", color: "#2b1c03", justifyContent: "center", alignItems: "center", paddingBottom: "2rem", fontSize: "15px"}}>
               &copy; Copyright <strong style={{paddingLeft: "0.5rem"}}><span>BOLO89</span></strong>. All Rights Reserved

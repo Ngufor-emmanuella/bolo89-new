@@ -53,11 +53,15 @@
 
   .mainfooter {
     display: block;
-    justify-content: center;
-    align-items: center;
+    margin-left: 3.5rem;
   }
 
   .footer-links {
     margin-left: 2rem;
   }
+
+  /* .footerimg {
+   position: relative;
+  left: 3rem;
+  } */
 }

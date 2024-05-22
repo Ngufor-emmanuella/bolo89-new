@@ -10,6 +10,7 @@ import Gallery from './pages/Gallery';
 // import Uploadresume from './pages/Uploadresume';
 import Contact from './pages/Contact';
 import Bookoffice from './pages/Bookoffice';
+import Applyjobs from './pages/Applyjobs';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/Uploadresume" element={<Uploadresume />} /> */}
           <Route path="/bookoffice" element={<Bookoffice />} />
+          <Route path="/applyjobs" element={<Applyjobs/>} />
 
         </Routes>
       </BrowserRouter>
