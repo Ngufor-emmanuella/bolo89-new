@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Bolo
 
 This Project is a replicate of the bolo89 website.  It's built using  the framework React and MUI.
 
