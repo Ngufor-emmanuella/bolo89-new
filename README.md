@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Bolo
 
 This Project is a replicate of the bolo89 website. It's built using  the framework React and MUI.
 
@@ -13,6 +13,7 @@ git clone paste this link (https://github.com/Ngufor-emmanuella/bolo89-new.git)
 Open vs code by running: code .
 
 ### Once in vs code open the terminal and run :
+do cd bolo
 
 npm install (to install the packages and dependencies on your computer needed to run the site locally),
 
