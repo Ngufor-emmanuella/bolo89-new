@@ -5,43 +5,53 @@ import { Link } from "react-router-dom";
 import '../styles/Career.css';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
-// import Applyjons from '../pages/Applyjobs';
+// import Applyjobs from '../pages/Applyjobs';
 
 const Career = () => {
   return (
     <Layout>
       <div className="box"> 
         <h1> Career Opportunities </h1>
+
+        <TableContainer component={Paper} sx={{ overflowX: 'auto', maxWidth: '100%' }} className="four">
+      <Table aria-label='simple table' stickyHeader>
+        <TableHead>
+          <TableRow>
+            <TableCell style={{ color: '#625b4b', fontSize: '18px', fontWeight: '800', borderBottom: '3px solid #625b4b' }}>Role</TableCell>
+            <TableCell style={{ color: '#625b4b', fontSize: '18px', fontWeight: '800', borderBottom: '3px solid #625b4b' }}>Description</TableCell>
+            <TableCell style={{ color: '#625b4b', fontSize: '18px', fontWeight: '800', borderBottom: '3px solid #625b4b' }}>Location</TableCell>
+            <TableCell align='center' style={{ color: '#625b4b', fontSize: '18px', fontWeight: '800', borderBottom: '3px solid #625b4b' }}>Apply</TableCell>
+          </TableRow>
+        </TableHead>
+
+        <TableBody>
+          {tableData.map((row) => (
+            <TableRow key={row} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+              <TableCell>
+                <Link to="/applyjobs" style={{ color: '#cda45e', fontSize: '15px', fontWeight: '600', textDecoration: 'none' }}>
+                  {row.job_title}
+                </Link>
+              </TableCell>
+              <TableCell >
+                <Link to="/applyjobs" style={{ color: '#000', fontSize: '15px', fontWeight: '600', wordWrap: 'break-word' }}></Link>
+                {row.description}</TableCell>
+              <TableCell style={{ color: '#000', fontSize: '15px', fontWeight: '600' }}>{row.location}</TableCell>
+              <TableCell align='center'>
+                <Link to="/applyjobs" style={{ color: '#cda45e', fontSize: '15px', fontWeight: '600', textDecoration: 'none' }}>
+                  {row.apply}
+                </Link>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+
+
+      
         
 
-        <TableContainer component={Paper} sx={{ maxHeight: "auto" }} className="four">
-          <Table aria-label='simple table' stickyHeader>
-            <TableHead>
-              <TableRow>
-                <TableCell style={{ color: '#625b4b', fontSize: '18px', fontWeight: '800', borderBottom: '3px solid #625b4b'}}> Role</TableCell>
-                <TableCell style={{ color: '#625b4b', fontSize: '18px', fontWeight: '800', borderBottom: '3px solid #625b4b'}}> Description</TableCell>
-                <TableCell style={{ color: '#625b4b', fontSize: '18px', fontWeight: '800', borderBottom: '3px solid #625b4b'}}> Location </TableCell>
-                <TableCell align='center' style={{ color: '#625b4b', fontSize: '18px', fontWeight: '800', borderBottom: '3px solid #625b4b'}}> Apply </TableCell>
-              
-              </TableRow>
-            </TableHead>
-
-            <TableBody>
-              {tableData.map((row) => (
-                <TableRow key={row} sx={{ '&:last-child td, &:last-child th': { border: 0 }}}>
-
-                  <TableCell><Link style={{ color: '#cda45e', fontSize: '15px', fontWeight: '600', textDecoration: 'none'}}>{row.job_title}</Link></TableCell>
-                  <TableCell style={{ color: '#000', fontSize: '15px', fontWeight: '600'}}>{row.description}</TableCell>
-                  <TableCell style={{ color: '#000', fontSize: '15px', fontWeight: '600'}}>{row.location}</TableCell>
-                  <TableCell align='center'><Link to="/about" style={{ color: '#cda45e', fontSize: '15px', fontWeight: '600', textDecoration: 'none'}}>{row.apply}</Link></TableCell>
-                  
-                </TableRow>
-
-              ))}
-
-            </TableBody>
-          </Table>
-        </TableContainer>
+      
       
         <div className="arrow">
              <Link to="/events"><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>

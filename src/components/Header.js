@@ -56,7 +56,7 @@ const Header = () => {
                 </li>
                 
                 {/* <li>
-                  <NavLink to={"/Uploadresume"}> Upload Resume </NavLink>
+                  <NavLink to={"/applyjobs"}> apply jobs </NavLink>
                 </li> */}
 
                 <br></br>
@@ -132,6 +132,10 @@ const Header = () => {
                 <li>
                   <NavLink to={"/contact"}> Contact </NavLink>
                 </li>
+
+                {/* <li>
+                  <NavLink to={"/applyjobs"}> apply jobs </NavLink>
+                </li> */}
               
 
                 {/* <li>

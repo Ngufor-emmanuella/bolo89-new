@@ -1,21 +1,21 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { Link } from "react-router-dom";
+import "../styles/Applyjobs.css";
+import Frame from "../images/frame.png";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Tiktok from '../images/tiktok.png';
-import Location from '../images/location.png';
-
+import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 
 const Applyjobs = () => {
   return (
     <Layout>
 
         <div className="container-fluid align-items-center">
+          <img src={Frame} alt="bolo space" className="main-img"/>
 
-          {/* <img src="assets/img/frame.png" alt="hiring picture" className="img-fluid w-100 h-auto p-0 m-0"> */}
 
           <div className="container">
 
@@ -23,7 +23,6 @@ const Applyjobs = () => {
               
               <h3>About this role</h3>
               <h2> React Developer <span className="color-gray">(Freelance)</span></h2>
-              {/* <h6><img src="assets/img/location.png" alt="location">.</h6> */}
               <h5>Job Summary: </h5>
 
               <p className="p-talented">We are hiring a skilled and experienced React Developer on behalf of one of our
@@ -87,14 +86,16 @@ const Applyjobs = () => {
                 </p>
                 <br></br>
 
-                <button class="apply-now"><a href="https://script.google.com/macros/s/AKfycbw3BKHQjSfkZ0-cMwtHjXvNbxj_-oU1TIr8IhK1NTZO6CQWKzdj6dSrGRWPX3qtW76E5A/exec">Apply Now</a></button>
+                <button class="apply-now"><Link to="https://script.google.com/macros/s/AKfycbw3BKHQjSfkZ0-cMwtHjXvNbxj_-oU1TIr8IhK1NTZO6CQWKzdj6dSrGRWPX3qtW76E5A/exec"
+                target="_blank" rel="noopener noreferrer">Apply Now</Link></button>
 
 
             </div>
 
-           {/* small box */}
+          
             <div className="col-4">
-              <button className="apply-now second-apply"><a href="https://script.google.com/macros/s/AKfycbw3BKHQjSfkZ0-cMwtHjXvNbxj_-oU1TIr8IhK1NTZO6CQWKzdj6dSrGRWPX3qtW76E5A/exec">Apply Now</a></button>
+              <button className="apply-now second-apply"><Link to="https://script.google.com/macros/s/AKfycbw3BKHQjSfkZ0-cMwtHjXvNbxj_-oU1TIr8IhK1NTZO6CQWKzdj6dSrGRWPX3qtW76E5A/exec"
+              target="_blank" rel="noopener noreferrer">Apply Now</Link></button>
 
               <br></br>
 
@@ -103,14 +104,14 @@ const Applyjobs = () => {
               <div className="social-media">
                 <h4 className="social-h4" >Share this job</h4>
 
-                <ul className="socialmedia-link">
-                  <li><Link to="/https://www.facebook.com/Bolo89-100953628907693"><FacebookIcon alt="facebook" /></Link></li>
-                  <li><Link to="/https://www.instagram.com/bolo89official">< XIcon alt="instagram" /></Link></li>
-                  <li><Link to="/https://www.linkedin.com/company/bolo89"><InstagramIcon/></Link></li>
-                  <li><Link to="/https://twitter.com/bolo89official"><LinkedInIcon alt="twitter" /></Link></li>
-                  <li><Link to="/https://www.tiktok.com/bolo89official">< Tiktok /></Link></li>
-                </ul>
+                <ul className="icon-list" style={{display: "flex", justifyContent: "space-around"}}>
+              <li><Link to="https://twitter.com/bolo89official"><XIcon style={{ backgroundColor: "#000", padding: "0.2rem", borderRadius: "20px", fontSize: "30px"}}/></Link></li>
+              <li><Link to="https://www.facebook.com/Bolo89-100953628907693"><FacebookIcon style={{ backgroundColor: "#0d6efd", padding: "0.2rem", borderRadius: "20px", fontSize: "30px"}}/></Link></li>
+              <li><Link to="https://www.instagram.com/bolo89official"><InstagramIcon style={{ backgroundColor: "dc3545", padding: "0.2rem", borderRadius: "20px", fontSize: "30px"}}/></Link></li>
+              <li><Link to="https://www.linkedin.com/company/bolo89"><LinkedInIcon style={{ backgroundColor: "#0d6efd", padding: "0.2rem", borderRadius: "20px", fontSize: "30px"}}/></Link></li>
+            </ul>
               </div>
+
 
               <br></br>
 
@@ -119,18 +120,22 @@ const Applyjobs = () => {
               <div className="other-jobs">
                 <h4 className="social-h4">Other Jobs</h4>
                 <p><bold className="color-red">Front end developer</bold> (Full time)</p>
-                <h6><Location alt="location" />.</h6>
+                {/* <h6><Location  />.</h6> */}
               
                 <p><bold className="color-red">React Developer</bold> (Full time)</p>
-                <h6><Location alt="location" />.</h6>
+                {/* <h6><Location />.</h6> */}
             
                 <p><bold className="color-red">Graphic designer</bold> (Full time)</p>
-                <h6><Location alt="location" />.</h6>
+                {/* <h6><Location /></h6> */}
                 <br></br>
 
               </div>
             </div>
               
+          </div>
+
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center"}} > 
+            <Link to="/career" ><ArrowCircleLeftIcon style={{ color: '#cda45e', fontSize: '2.7rem'}} /></Link>
           </div>
         </div>
 
