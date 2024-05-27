@@ -1,0 +1,69 @@
+/* code to shift navbar */
+.navigation-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-menu li {
+  margin: 0px 20px;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation-menu li a:hover {
+  color:  #cda45e;
+}
+
+.MuiSvgIcon-root {
+  color: #fff;
+}
+
+/* mobile menu styles */
+.mobile-navigation {
+  list-style-type: none;
+}
+
+.mobile-navigation li {
+  margin-top: 20px;
+}
+
+.mobile-navigation li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.headerContainer {  
+  animation: zoomIn 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.lastlist {
+  border: 2px solid #cda45e;
+  padding: 10px;
+  border-radius: 16px;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .mobiletime {
+    display: none;
+  }
+  
+}

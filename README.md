@@ -1,6 +1,6 @@
 # Bolo
 
-This Project is a replicate of the bolo89 website. It's built using  the framework React and MUI.
+This Project is a replicate of the bolo89 website.  It's built using  the framework React and MUI.
 
 ## Available Scripts
 To  view this project on your local machine do the following :

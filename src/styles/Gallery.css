@@ -1,0 +1,29 @@
+.gall-box {
+  padding: 3rem;
+}
+
+.gallery {
+  color: #cda45e;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+}
+
+.five {
+  animation: roll-in 3s ease-in-out;
+}
+
+@keyframes roll-in {
+  0% {
+    transform: translateX(100%) rotate(120deg);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%) rotate(0deg);
+    opacity: 1;
+  }
+}

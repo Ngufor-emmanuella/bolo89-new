@@ -1,0 +1,84 @@
+.contact-form {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 4rem 2rem 4rem;
+
+}
+
+.sec-head {
+  color: #cda45e;
+  font-size: 25px;
+  margin-left: 1rem;
+}
+
+.first-head {
+  color: #cda45e;
+  margin-left: 1rem;
+  font-size: 40px;
+}
+
+.paragraph {
+  width: 65%;
+}
+
+.put-up {
+  margin-top: -1rem;
+  animation: slideIn 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h3 {
+  color: #cda45e;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.location {
+  position: relative;
+  bottom: 0.5rem
+}
+
+.cardup {
+  animation: zoomIn 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .contact-form {
+    display: block;
+  }
+
+  .put-up {
+    margin-top: -4rem;
+  }
+
+  .sec-head {
+    margin-top: 5rem;
+  }
+
+ 
+
+}

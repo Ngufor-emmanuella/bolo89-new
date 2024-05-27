@@ -1,0 +1,66 @@
+
+
+h3 {
+  color: #cda45e;
+  font-size: 16px;
+
+}
+
+.first-p {
+  color: #000;
+  font-size: 16px;
+}
+
+.sec-header {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 1rem;
+  padding-top: 2rem;
+  color: #cda45e;
+
+}
+
+.second-p {
+  color: #000;
+}
+
+h4 {
+  color: #000;
+  font-size: 17px;
+}
+
+h4:hover {
+  color: #000;
+}
+
+p {
+  margin-left: 1rem;
+}
+
+.three {
+  animation: zoomIn 4s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.sec-header {
+  margin-left: 1rem;
+}
+
+p {
+  margin-left: 1rem;
+}
+}

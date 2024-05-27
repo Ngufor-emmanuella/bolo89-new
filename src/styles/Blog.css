@@ -1,0 +1,58 @@
+.blog-page {
+  width: 100%;
+  height: 100vh;
+}
+
+h3 {
+  color: #cda45e;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 2rem;
+  margin-left: 1rem;
+
+}
+
+h4 {
+  color: #cda45e;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 2rem;
+  margin-left: 2rem;
+}
+
+.blog-four {
+  text-decoration: none;
+}
+
+
+p {
+  color: #000;
+  font-size: 23px;
+  margin-left: 2rem;
+}
+
+h4:hover {
+  color: #000;
+}
+
+.two {
+  animation: roll-in 3s ease-in-out;
+}
+
+@keyframes roll-in {
+  0% {
+    transform: translateX(-100%) rotate(-120deg);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  h3 {
+    margin-top: 5rem;
+}
+}

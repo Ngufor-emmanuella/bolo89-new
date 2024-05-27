@@ -1,0 +1,42 @@
+.box {
+  padding: 2rem;
+}
+
+
+h1 {
+  color: #625b4b;
+  padding-bottom: 2rem;
+}
+
+.arrow {
+  background-color: none;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.four {
+  animation: roll-in 2s ease-in-out;
+}
+
+@keyframes roll-in {
+  0% {
+    transform: translateX(-100%) rotate(-120deg);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 29px;
+    margin-top: 5rem;
+  }
+}
+
+
